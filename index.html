@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Password Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <img src="assets/project-unknown-cubes-7340789_1280.jpg" alt="">
+
+    <div class="container">
+        <h1>generate a</h1>
+        <h1 id="second">random password</h1>
+        <div class="input-copy">
+            <input type="text" class="input" placeholder="Password" disabled>
+            <img src="assets/copy-icon.png" class="copy">
+        </div>
+        <input type="range" class="range" min="4" max="16" value="8">
+
+        <div class="password-length">
+            <span>Password length:</span>
+            <span class="length">4</span>
+        </div>
+
+        <div class="row">
+            <label for="lowercase">
+                include lowercase character (a-z)
+            </label>
+            <input type="checkbox" id="lowercase" checked>
+        </div>
+
+        <div class="row">
+            <label for="uppercase">
+                include uppercase character (A-Z)
+            </label>
+            <input type="checkbox" id="uppercase" checked>
+        </div>
+
+        <div class="row">
+            <label for="number">
+                include numbers (0-9)
+            </label>
+            <input type="checkbox" id="number" checked>
+        </div>
+        <div class="row">
+            <label for="specialsymbol">
+                include special symbols (@^/\)
+            </label>
+            <input type="checkbox" id="specialsymbol" checked>
+        </div>
+
+        <button class="generate">Generate Password</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
